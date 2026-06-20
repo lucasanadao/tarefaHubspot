@@ -1,7 +1,7 @@
 # Integrating With HubSpot I: Foundations — Practicum
 
-Node.js app that integrates with the HubSpot API using a Private App token.
-Built as part of the HubSpot Academy certification practicum.
+Aplicação Node.js que integra com a API do HubSpot usando um token de Private App.
+Desenvolvida como parte do practicum de certificação da HubSpot Academy.
 
 ## Stack
 
@@ -10,30 +10,30 @@ Built as part of the HubSpot Academy certification practicum.
 - Pug (templates)
 - dotenv
 
-## Routes
+## Rotas
 
-| Method | Route          | Description                                      |
-|--------|----------------|--------------------------------------------------|
-| GET    | `/`            | Lists all custom object records in a table       |
-| GET    | `/update-cobj` | Renders form to create a new record              |
-| POST   | `/update-cobj` | Creates a new record via API and redirects home  |
+| Método | Rota           | Descrição                                              |
+|--------|----------------|--------------------------------------------------------|
+| GET    | `/`            | Lista todos os registros do custom object em tabela    |
+| GET    | `/update-cobj` | Renderiza formulário para criar um novo registro       |
+| POST   | `/update-cobj` | Cria um novo registro via API e redireciona para home  |
 
 ## Custom Object
 
-**Video Game** object with properties: `name`, `model`, `year`
+Objeto **Video Game** com as properties: `name`, `model`, `year`
 
-View records in HubSpot:
-https://app.hubspot.com/contacts/51609680/objects/2-64520254/views/all/list
+Visualizar registros no HubSpot:
+https://app.hubspot.com/contacts/51609280/objects/2-64520254/views/all/list
 
-## Setup
+## Como rodar
 
 ```bash
 npm install
-# Create .env from .env.example and fill in your token
+# Crie o .env a partir do .env.example e preencha com seu token
 node index.js
-# Open http://localhost:3000
+# Acesse http://localhost:3000
 ```
 
-## Security
+## Segurança
 
-The `.env` file (containing the private app token) is listed in `.gitignore` and is never committed.
+O arquivo `.env` (que contém o token do private app) está listado no `.gitignore` e nunca é commitado.
