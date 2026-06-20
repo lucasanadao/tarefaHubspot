@@ -1,0 +1,25 @@
+doctype html
+html(lang='pt-BR')
+  head
+    meta(charset='UTF-8')
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Add a New Record
+
+    a(href='/') Return to the homepage
+
+    form(method='POST', action='/update-cobj')
+      div.form-group
+        label(for='name') Name
+        input#name(type='text', name='name', required, placeholder='e.g. Mario Kart 8')
+
+      div.form-group
+        label(for='model') Model
+        input#model(type='text', name='model', required, placeholder='e.g. Nintendo Switch')
+
+      div.form-group
+        label(for='year') Year
+        input#year(type='number', name='year', required, placeholder='e.g. 2017')
+
+      button(type='submit') Add Record
